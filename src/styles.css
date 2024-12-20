@@ -1,0 +1,69 @@
+body {
+   font-family: sans-serif;
+   margin: 0;
+   padding: 20px;
+   background-color: #f0f2f5;
+}
+
+.App {
+   max-width: 800px;
+   margin: 0 auto;
+   background-color: #ffffff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+   text-align: center;
+   color: #333;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+li {
+   background-color: #f9f9f9;
+   margin-bottom: 10px;
+   padding: 15px;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center; /* Centra verticalmente la imagen y el texto */
+}
+
+li img {
+   width: 80px;
+   margin-right: 15px;
+}
+
+li h2 {
+ margin: 0;
+ margin-bottom: 5px;
+ color: #333;
+}
+li p {
+  margin: 0;
+   font-size: 0.9em;
+   color: #555;
+}
+select{
+ padding: 10px;
+ margin-bottom: 20px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ 
+}
+
+/* Estilos responsive */
+@media (max-width: 600px) {
+   li {
+     flex-direction: column;
+     text-align: center;
+ }
+ li img{
+  margin-right: 0;
+ }
+}
