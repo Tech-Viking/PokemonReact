@@ -42,5 +42,18 @@ const fetchPokemonTypes = async () => {
     }
   };
 
+const fetchAllPokemons = async () => {
+   try{
+       const response = await fetch(`${API_URL}/pokemon?limit=10000`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data.results;
+   }catch(error){
+        console.error("Error fetching all pokemons:", error);
+        throw error;
+   }
+};
 
-export { fetchPokemonList, fetchPokemonDetails, fetchPokemonTypes };
+export { fetchPokemonList, fetchPokemonDetails, fetchPokemonTypes, fetchAllPokemons };

@@ -5,6 +5,15 @@ body {
    background-color: #f0f2f5;
 }
 
+.app-container {
+   max-width: 800px;
+   margin: 0 auto;
+   background-color: #ffffff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .App {
    max-width: 800px;
    margin: 0 auto;
@@ -50,12 +59,14 @@ li p {
    color: #555;
 }
 select{
- padding: 10px;
- margin-bottom: 20px;
- border: 1px solid #ddd;
- border-radius: 5px;
- 
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   display: block;
+   width: 100%;
 }
+
 
 /* Estilos responsive */
 @media (max-width: 600px) {
@@ -66,4 +77,10 @@ select{
  li img{
   margin-right: 0;
  }
+}
+
+@media (max-width: 600px) {
+   .app-container {
+       padding: 10px;
+   }
 }

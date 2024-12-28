@@ -1,0 +1,37 @@
+@import './variables.css';
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+select{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .app-container {
+        padding: 10px;
+    }
+}
